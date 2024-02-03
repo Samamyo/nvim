@@ -27,17 +27,20 @@ return {
 				["core.summary"] = {},
 
 				["core.integrations.treesitter"] = {},
+
 				["core.integrations.telescope"] = {},
 
 				["core.esupports.metagen"] = {
 					config = { timezones = "implicit-local", type = "auto" },
 				},
+
 				["core.journal"] = {
 					config = {
 						strategy = "flat",
 						workspace = "notes",
 					},
 				},
+
 				["core.dirman"] = {
 					config = {
 						workspaces = {
@@ -47,11 +50,11 @@ return {
 						default_workspace = "notes",
 					},
 				},
+
 				["core.keybinds"] = {
 					config = {
 						hook = function(keybinds)
 							keybinds.map("norg", "n", "<localleader>r", ":Neorg return<CR>")
-
 							keybinds.map("norg", "i", "-(", "- ( ) ")
 							keybinds.remap_event("norg", "i", "\\date", "core.tempus.insert-date-insert-mode")
 						end,
@@ -113,6 +116,5 @@ return {
 				noremap = true,
 			})
 		end)
-		vim.wo.foldlevel = 999
 	end,
 }
