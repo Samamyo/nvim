@@ -1,9 +1,11 @@
 return {
 	{
 		"hrsh7th/cmp-nvim-lsp",
+        Lazy = true,
 	},
 	{
 		"L3MON4D3/LuaSnip",
+        Lazy = true,
 		dependencies = {
 			"saadparwaiz1/cmp_luasnip",
 			"rafamadriz/friendly-snippets",
