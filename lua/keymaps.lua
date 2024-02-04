@@ -35,13 +35,14 @@ vim.keymap.set("n", "<leader>csn", ":colorscheme northern<Cr>")
 
 -- Get to files
 vim.keymap.set("n", "<leader>nvc", function()
-vim.cmd("cd ~/.config/nvim/")
-vim.cmd("e ~/.config/nvim/")
+	vim.cmd("cd ~/.config/nvim/")
+	vim.cmd("e ~/.config/nvim/")
 end)
-
 
 --nvim
 vim.keymap.set("n", "U", "<C-r>", { desc = "redo" })
 vim.keymap.set("n", "E", "$", { desc = "get end of line" })
 vim.keymap.set("i", "<C-<BS>>", "<ESC>caw")
-vim.keymap.set("i", "jk", "<ESC>" )
+vim.keymap.set("i", "jk", "<ESC>")
+vim.keymap.set("n", ";", ":")
+vim.keymap.set("n", ":", ";")

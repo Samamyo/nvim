@@ -38,6 +38,9 @@ return {
 
 		config = function()
 			vim.cmd.colorscheme("kanagawa")
+			require("catppuccin").setup({
+				transparent_background = true, -- do not set background color
+			})
 		end,
 	},
 }
