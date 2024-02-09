@@ -1,6 +1,9 @@
 return {
 	{
 		"nvim-telescope/telescope.nvim",
+		dependancies = {
+			"nvim-telescope/telescope-ui-select.nvim",
+		},
 		tag = "0.1.5",
 		keys = {
 			{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find File" },

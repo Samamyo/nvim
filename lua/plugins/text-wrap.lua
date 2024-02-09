@@ -1,11 +1,12 @@
 return {
     "benlubas/wrapping-paper.nvim",
+    -- dev = true,
     dependencies = {
         "MunifTanjim/nui.nvim",
     },
     keys = {
         {
-            "qww",
+            "gww",
             function()
                 require("wrapping-paper").wrap_line()
             end,

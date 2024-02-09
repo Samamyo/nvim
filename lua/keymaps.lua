@@ -46,3 +46,10 @@ vim.keymap.set("i", "<C-<Bs>>", "<C-c>caw")
 vim.keymap.set("i", "jj", "<ESC>")
 vim.keymap.set("n", ";", ":")
 vim.keymap.set("n", ":", ";")
+
+-- terminal keybinds
+vim.keymap.set("i", "<C-a>", "<C-o>_", { desc = "home" })
+vim.keymap.set("i", "<C-e>", "<C-o>$", { desc = "end" })
+-- these two are not default, you have to use esc + f/b which is weird as hell
+vim.keymap.set("i", "<C-f>", "<C-o>w", { desc = "forward" })
+vim.keymap.set("i", "<C-b>", "<C-o>b", { desc = "backward" })
