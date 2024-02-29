@@ -56,7 +56,6 @@ return {
                         hook = function(keybinds)
                             keybinds.map("norg", "n", "<localleader>r", ":Neorg return<CR>")
                             keybinds.map("norg", "i", "-(", "- ( ) ")
-                            keybinds.remap_event("norg", "i", "\\date", "core.tempus.insert-date-insert-mode")
                         end,
                     },
                 },

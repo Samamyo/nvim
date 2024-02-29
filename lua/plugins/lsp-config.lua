@@ -11,7 +11,7 @@ return {
         lazy = true,
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls" },
+                ensure_installed = { "lua_ls", "pyright" },
             })
         end,
     },
@@ -28,6 +28,10 @@ return {
             local lspconfig = require("lspconfig")
             lspconfig.lua_ls.setup({
                 capabilities = capabilities,
+            })
+            lspconfig.pyright.setup({
+                capabilities = capabilities,
+                filetypes = {"python"}
             })
         end,
     },
