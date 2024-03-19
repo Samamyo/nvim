@@ -28,7 +28,7 @@ opt.wrap = false
 opt.clipboard:append("unnamedplus")
 
 --other
-opt.scrolloff = 8
+opt.scrolloff = 999
 opt.iskeyword:append("-")
 opt.inccommand = "split"
 
