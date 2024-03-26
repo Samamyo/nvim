@@ -31,7 +31,6 @@ vim.keymap.set("v", "L", ":MoveHBlock(1)<CR>")
 
 -- Colour Schemes
 vim.keymap.set("n", "<leader>csk", ":colorscheme kanagawa-wave<Cr>")
-vim.keymap.set("n", "<leader>csh", ":colorscheme hybrid<Cr>")
 
 -- Get to files
 vim.keymap.set("n", "<leader>nvc", function()
@@ -42,8 +41,10 @@ end)
 --nvim
 vim.keymap.set("n", "U", "<C-r>", { desc = "redo" })
 vim.keymap.set("n", "E", "$", { desc = "get end of line" })
-vim.keymap.set("i", "<C-<Bs>>", "<C-c>ciw")
+vim.keymap.set("i", "<C-<Bs>>", "<C-o>ciw")
+vim.keymap.set("n", "<C-<Bs>>", "ciw")
 vim.keymap.set("i", "jk", "<ESC>")
+
 -- a bit of a swapsees
 vim.keymap.set("n", ";", ":")
 vim.keymap.set("n", ":", ";")
