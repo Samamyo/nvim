@@ -31,8 +31,6 @@ return {
 
 					["core.integrations.treesitter"] = {},
 
-					["core.integrations.telescope"] = {},
-
 					["core.esupports.metagen"] = {
 						config = { timezones = "implicit-local", type = "auto" },
 					},
