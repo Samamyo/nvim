@@ -13,21 +13,31 @@ vim.keymap.set("n", "-", "<CMD>Oil<Cr>")
 vim.keymap.set("n", "<leader>k", vim.lsp.buf.hover, {})
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 vim.keymap.set("n", "<Leader>ca", vim.lsp.buf.code_action, {})
+vim.keymap.set("n", "]d", function() vim.diagnostic.goto_next() end, opts)
+vim.keymap.set("n", "[d", function() vim.diagnostic.goto_prev() end, opts)
+vim.keymap.set("n", "<leader>rr", function() vim.lsp.buf.references() end, opts)
+vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end, opts)
+
+-- Navigate with tmux
+vim.keymap.set("n", "<c-h>", "wincmd h<CR>")
+vim.keymap.set("n", "<c-j>", "wincmd j<CR>")
+vim.keymap.set("n", "<c-k>", "wincmd k<CR>")
+vim.keymap.set("n", "<c-l>", "wincmd l<CR>")
 
 -- move.nvim
 -- Normal-mode commands
-vim.keymap.set("n", "J", ":MoveLine(1)<CR>")
-vim.keymap.set("n", "K", ":MoveLine(-1)<CR>")
-vim.keymap.set("n", "H", ":MoveHChar(-1)<CR>")
-vim.keymap.set("n", "L", ":MoveHChar(1)<CR>")
-vim.keymap.set("n", "<leader>wf", ":MoveWord(1)<CR>")
-vim.keymap.set("n", "<leader>wb", ":MoveWord(-1)<CR>")
+vim.keymap.set("n", "J", ":MoveLine(1)<CR>",opts)
+vim.keymap.set("n", "K", ":MoveLine(-1)<CR>",opts)
+vim.keymap.set("n", "H", ":MoveHChar(-1)<CR>",opts)
+vim.keymap.set("n", "L", ":MoveHChar(1)<CR>",opts)
+vim.keymap.set("n", "<leader>wf", ":MoveWord(1)<CR>",opts)
+vim.keymap.set("n", "<leader>wb", ":MoveWord(-1)<CR>",opts)
 
 -- Visual-mode commands
-vim.keymap.set("v", "J", ":MoveBlock(1)<CR>")
-vim.keymap.set("v", "K", ":MoveBlock(-1)<CR>")
-vim.keymap.set("v", "H", ":MoveHBlock(-1)<CR>")
-vim.keymap.set("v", "L", ":MoveHBlock(1)<CR>")
+vim.keymap.set("v", "J", ":MoveBlock(1)<CR>",opts)
+vim.keymap.set("v", "K", ":MoveBlock(-1)<CR>",opts)
+vim.keymap.set("v", "H", ":MoveHBlock(-1)<CR>",opts)
+vim.keymap.set("v", "L", ":MoveHBlock(1)<CR>",opts)
 
 -- Colour Schemes
 vim.keymap.set("n", "<leader>csk", ":colorscheme kanagawa-wave<Cr>")
@@ -44,6 +54,7 @@ vim.keymap.set("n", "E", "$", { desc = "get end of line" })
 vim.keymap.set("i", "<C-<Bs>>", "<C-o>ciw")
 vim.keymap.set("n", "<C-<Bs>>", "ciw")
 vim.keymap.set("i", "jk", "<ESC>")
+vim.keymap.set("n", "<leader>h" , "<cmd>noh<Cr>")
 
 -- a bit of a swapsees
 vim.keymap.set("n", ";", ":")
