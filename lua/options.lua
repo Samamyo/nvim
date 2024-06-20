@@ -23,14 +23,18 @@ opt.termguicolors = true
 opt.background = "dark"
 vim.wo.conceallevel = 2
 opt.wrap = false
+vim.opt.signcolumn = "yes"
 
 --clipboard
 opt.clipboard:append("unnamedplus")
+-- vim.opt.hlsearch = false
 
 --other
-opt.scrolloff = 999
+opt.scrolloff = 14
 opt.iskeyword:append("-")
 opt.inccommand = "split"
+vim.opt.smartindent = true
+vim.opt.swapfile = false
 
 --leader
 vim.g.mapleader = " "
