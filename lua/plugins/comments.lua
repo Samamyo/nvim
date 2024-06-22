@@ -1,6 +1,6 @@
 return {
 	"numToStr/Comment.nvim",
-	event = "InsertEnter",
+	keys = { { "gcc" }, { "gc" } },
 	opts = {
 		-- add any options here
 	},
