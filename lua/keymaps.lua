@@ -57,8 +57,8 @@ vim.keymap.set("i", "jk", "<ESC>")
 vim.keymap.set("n", "<leader>h" , "<cmd>noh<Cr>")
 
 -- a bit of a swapsees
-vim.keymap.set("n", ";", ":")
-vim.keymap.set("n", ":", ";")
+-- vim.keymap.set("n", ";", ":")
+-- vim.keymap.set("n", ":", ";")
 
 -- terminal keybinds
 vim.keymap.set("i", "<C-a>", "<C-o>_", { desc = "home" })
