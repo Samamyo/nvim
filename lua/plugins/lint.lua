@@ -9,5 +9,8 @@ return {
 			go = { "golangcilint" },
 			python = { "flake8" },
 		}
+		vim.keymap.set("n", "<leader>tl", function()
+			lint.try_lint()
+		end)
 	end,
 }
