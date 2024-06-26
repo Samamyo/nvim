@@ -28,16 +28,10 @@ vim.keymap.set("n", "<c-l>", "wincmd l<CR>")
 -- Normal-mode commands
 vim.keymap.set("n", "J", ":MoveLine(1)<CR>",opts)
 vim.keymap.set("n", "K", ":MoveLine(-1)<CR>",opts)
-vim.keymap.set("n", "H", ":MoveHChar(-1)<CR>",opts)
-vim.keymap.set("n", "L", ":MoveHChar(1)<CR>",opts)
-vim.keymap.set("n", "<leader>wf", ":MoveWord(1)<CR>",opts)
-vim.keymap.set("n", "<leader>wb", ":MoveWord(-1)<CR>",opts)
 
 -- Visual-mode commands
 vim.keymap.set("v", "J", ":MoveBlock(1)<CR>",opts)
 vim.keymap.set("v", "K", ":MoveBlock(-1)<CR>",opts)
-vim.keymap.set("v", "H", ":MoveHBlock(-1)<CR>",opts)
-vim.keymap.set("v", "L", ":MoveHBlock(1)<CR>",opts)
 
 -- Colour Schemes
 vim.keymap.set("n", "<leader>csk", ":colorscheme kanagawa-wave<Cr>")
