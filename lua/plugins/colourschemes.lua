@@ -10,16 +10,6 @@ return {
 			vim.cmd.colorscheme("kanagawa")
 		end,
 	},
-	{
-		"EdenEast/nightfox.nvim",
-		config = function()
-			require("nightfox").setup({
-				options = {
-					-- transparent = true,
-				},
-			})
-		end,
-	},
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	{
 		"folke/tokyonight.nvim",
