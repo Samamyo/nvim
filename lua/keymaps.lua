@@ -2,6 +2,7 @@
 vim.keymap.set("n", "<Leader>e", ":NvimTreeToggle<Cr>")
 vim.keymap.set("n", "<Leader>r", ":NvimTreeFocus<Cr>")
 
+vim.api.nvim_set_keymap('n', '<leader>w', '<c-w>', { noremap = true, silent = true })
 -- Neorg
 vim.keymap.set("n", "<C-1>", ":e ~/Notes/notes/index.norg<Cr> :Neorg workspace notes<Cr>")
 vim.keymap.set("n", "<C-0>", ":e ~/Notes/work/index.norg<Cr> :Neorg workspace work<Cr>")
