@@ -2,9 +2,10 @@ return {
 	{
 		"nvim-telescope/telescope.nvim",
 		dependancies = {
+			"nvim-lua/plenary.nvim",
 			"nvim-telescope/telescope-ui-select.nvim",
 		},
-		tag = "0.1.5",
+		tag = "0.1.8",
 		keys = {
 			{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find File" },
 			{ "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Find Grep" },
