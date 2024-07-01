@@ -1,6 +1,5 @@
 return {
     "MunifTanjim/nougat.nvim",
-    event = "VeryLazy",
     config = function()
         local nougat = require("nougat")
         local core = require("nougat.core")
