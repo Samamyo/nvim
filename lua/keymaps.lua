@@ -1,6 +1,6 @@
 -- nvim tree
-vim.keymap.set("n", "<Leader>e", ":NvimTreeToggle<Cr>")
-vim.keymap.set("n", "<Leader>r", ":NvimTreeFocus<Cr>")
+-- vim.keymap.set("n", "<Leader>e", ":NvimTreeToggle<Cr>")
+-- vim.keymap.set("n", "<Leader>r", ":NvimTreeFocus<Cr>")
 
 vim.api.nvim_set_keymap('n', '<leader>w', '<c-w>', { noremap = true, silent = true })
 -- Neorg
@@ -25,15 +25,6 @@ vim.keymap.set("n", "<c-j>", "wincmd j<CR>")
 vim.keymap.set("n", "<c-k>", "wincmd k<CR>")
 vim.keymap.set("n", "<c-l>", "wincmd l<CR>")
 
--- move.nvim
--- Normal-mode commands
-vim.keymap.set("n", "J", ":MoveLine(1)<CR>",opts)
-vim.keymap.set("n", "K", ":MoveLine(-1)<CR>",opts)
-
--- Visual-mode commands
-vim.keymap.set("v", "J", ":MoveBlock(1)<CR>",opts)
-vim.keymap.set("v", "K", ":MoveBlock(-1)<CR>",opts)
-
 -- Colour Schemes
 vim.keymap.set("n", "<leader>csk", ":colorscheme kanagawa-wave<Cr>")
 
@@ -46,8 +37,9 @@ end)
 --nvim
 vim.keymap.set("n", "U", "<C-r>", { desc = "redo" })
 vim.keymap.set("n", "E", "$", { desc = "get end of line" })
-vim.keymap.set("i", "<C-<Bs>>", "<C-o>ciw")
-vim.keymap.set("n", "<C-<Bs>>", "ciw")
+-- IDK man
+-- vim.keymap.set("i", "<C-<BS>>", "<C-W>", { noreap = true, silent = true })
+-- vim.keymap.set("n", "<C-BS>", "ciw")
 vim.keymap.set("i", "jk", "<ESC>")
 vim.keymap.set("n", "<leader>h" , "<cmd>noh<Cr>")
 
@@ -55,9 +47,3 @@ vim.keymap.set("n", "<leader>h" , "<cmd>noh<Cr>")
 -- vim.keymap.set("n", ";", ":")
 -- vim.keymap.set("n", ":", ";")
 
--- terminal keybinds
-vim.keymap.set("i", "<C-a>", "<C-o>_", { desc = "home" })
-vim.keymap.set("i", "<C-e>", "<C-o>$", { desc = "end" })
--- these two are not default, you have to use esc + f/b which is weird as hell
-vim.keymap.set("i", "<C-f>", "<C-o>w", { desc = "forward" })
-vim.keymap.set("i", "<C-b>", "<C-o>b", { desc = "backward" })
