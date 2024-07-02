@@ -21,10 +21,12 @@ opt.smartcase = true
 --apperance
 opt.termguicolors = true
 opt.background = "dark"
-vim.wo.conceallevel = 2
 opt.wrap = false
 opt.signcolumn = "yes"
 opt.colorcolumn = "+1"
+vim.opt.list = true
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
+vim.opt.cursorline = true
 
 --clipboard
 opt.clipboard:append("unnamedplus")
@@ -36,6 +38,7 @@ opt.iskeyword:append("-")
 opt.inccommand = "split"
 opt.smartindent = true
 opt.swapfile = false
+opt.title = true
 
 --leader
 vim.g.mapleader = " "
@@ -43,5 +46,5 @@ vim.g.maplocalleader = ","
 vim.g.netrw_liststyle = 3
 
 vim.keymap.set("n", "<Leader><Leader>", function()
-    print("Hello World!")
+	print("Hello World!")
 end)
