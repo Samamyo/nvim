@@ -26,7 +26,7 @@ opt.signcolumn = "yes"
 opt.colorcolumn = "+1"
 vim.opt.list = true
 vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
-vim.opt.cursorline = true
+-- vim.opt.cursorline = true
 
 --clipboard
 opt.clipboard:append("unnamedplus")
