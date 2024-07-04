@@ -21,6 +21,7 @@ return {
 		dependencies = {
 			"williamboman/mason.nvim",
 			"williamboman/mason-lspconfig.nvim",
+			"j-hui/fidget.nvim",
 		},
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
@@ -54,5 +55,12 @@ return {
 				},
 			})
 		end,
+	},
+	{
+		"j-hui/fidget.nvim",
+		event = { "BufReadPost", "BufWritePost", "BufNewFile" },
+		opts = {
+			-- options
+		},
 	},
 }
