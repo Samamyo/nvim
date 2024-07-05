@@ -24,8 +24,8 @@ opt.background = "dark"
 opt.wrap = false
 opt.signcolumn = "yes"
 opt.colorcolumn = "+1"
-vim.opt.list = true
-vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
+opt.list = true
+opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 -- vim.opt.cursorline = true
 
 --clipboard
