@@ -58,7 +58,7 @@ return {
 	},
 	{
 		"j-hui/fidget.nvim",
-		event = { "BufReadPost", "BufWritePost", "BufNewFile" },
+		-- lazy = true,
 		opts = {
 			-- options
 		},
