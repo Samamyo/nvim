@@ -30,7 +30,6 @@ set("n", "<c-k>", "wincmd k<CR>")
 set("n", "<c-l>", "wincmd l<CR>")
 
 -- Colour Schemes
-set("n", "<leader>csk", ":colorscheme kanagawa-wave<Cr>")
 
 -- Get to files
 vim.keymap.set("n", "<leader>nvc", function()
