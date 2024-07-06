@@ -46,5 +46,5 @@ vim.g.maplocalleader = ","
 vim.g.netrw_liststyle = 3
 
 vim.keymap.set("n", "<Leader><Leader>", function()
-	print("Hello World!")
+    print("Hello World!")
 end)

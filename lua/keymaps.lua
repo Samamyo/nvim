@@ -33,8 +33,8 @@ set("n", "<c-l>", "wincmd l<CR>")
 
 -- Get to files
 vim.keymap.set("n", "<leader>nvc", function()
-	vim.cmd("cd ~/.config/nvim/")
-	vim.cmd("e ~/.config/nvim/")
+    vim.cmd("cd ~/.config/nvim/")
+    vim.cmd("e ~/.config/nvim/")
 end)
 
 --nvim
