@@ -5,9 +5,9 @@ return {
         priority = 1000,
         config = function()
             require("catppuccin").setup({
-                -- transparent_background = true, -- do not set background color
+                transparent_background = true, -- do not set background color
             })
-            vim.cmd.colorscheme("catppuccin")
+            -- vim.cmd.colorscheme("catppuccin")
         end,
     },
     {
@@ -16,9 +16,10 @@ return {
         priority = 1000,
         config = function()
             require("kanagawa").setup({
-                transparent = true, -- do not set background color
+                compile = true,
+                transparent = true,
             })
-            -- vim.cmd.colorscheme("catppuccin-macchiato")
+            vim.cmd.colorscheme("kanagawa")
         end,
     },
 }

@@ -1,7 +1,8 @@
 return {
     {
         "williamboman/mason.nvim",
-        lazy = true,
+        -- dependencies = { "williamboman/mason-lspconfig.nvim" },
+        cmd = { "Mason", "MasonInstall", "MasonInstallAll", "MasonUpdate" },
         config = function()
             require("mason").setup()
         end,
@@ -20,8 +21,8 @@ return {
         event = { "BufReadPost", "BufWritePost", "BufNewFile" },
         dependencies = {
             "williamboman/mason.nvim",
-            "williamboman/mason-lspconfig.nvim",
-            "j-hui/fidget.nvim",
+            -- "williamboman/mason-lspconfig.nvim",
+            -- "j-hui/fidget.nvim",
         },
         config = function()
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
@@ -36,6 +37,10 @@ return {
             })
             lspconfig.clangd.setup({
                 capabilities = capabilities,
+            })
+            lspconfig.jqls.setup({
+                capabilities = capabilities,
+                filetypes = { "json" },
             })
             lspconfig.zls.setup({
                 capabilities = capabilities,
@@ -58,7 +63,7 @@ return {
     },
     {
         "j-hui/fidget.nvim",
-        -- lazy = true,
+        lazy = true,
         opts = {
             -- options
         },

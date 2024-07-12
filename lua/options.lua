@@ -38,6 +38,7 @@ opt.iskeyword:append("-")
 opt.inccommand = "split"
 opt.smartindent = true
 opt.swapfile = false
+opt.undofile = true
 opt.title = true
 
 --leader
