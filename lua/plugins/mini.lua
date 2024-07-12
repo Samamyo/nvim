@@ -17,6 +17,11 @@ return {
             require("mini.pairs").setup()
             require("mini.splitjoin").setup()
 
+            -- - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren
+            -- - sd'   - [S]urround [D]elete [']quotes
+            -- - sr)'  - [S]urround [R]eplace [)] [']
+            require("mini.surround").setup()
+
             require("mini.move").setup({
                 mappings = {
                     -- Move visual selection in Visual mode.
@@ -32,6 +37,7 @@ return {
                     line_up = "K",
                 },
             })
+
             local hipatterns = require("mini.hipatterns")
             hipatterns.setup({
                 highlighters = {
@@ -40,11 +46,11 @@ return {
                     hack = { pattern = "%f[%w]()HACK()%f[%W]", group = "MiniHipatternsHack" },
                     todo = { pattern = "%f[%w]()TODO()%f[%W]", group = "MiniHipatternsTodo" },
                     note = { pattern = "%f[%w]()NOTE()%f[%W]", group = "MiniHipatternsNote" },
-
                     -- Highlight hex color strings (`#rrggbb`) using that color
                     hex_color = hipatterns.gen_highlighter.hex_color(),
                 },
             })
+
         end,
     },
 }
