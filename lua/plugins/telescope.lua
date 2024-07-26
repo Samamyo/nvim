@@ -7,7 +7,7 @@ return {
         },
         tag = "0.1.8",
         keys = {
-            { "<leader>cs", ":Telescope colorscheme <Cr>", desc = "Search Colorschemes" },
+            { "<leader>th", ":Telescope colorscheme <Cr>", desc = "Search Colorschemes" },
             { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find File" },
             { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Find Grep" },
             { "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Find Buffers" },
