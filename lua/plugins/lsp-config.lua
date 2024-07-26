@@ -44,7 +44,7 @@ return {
             })
             lspconfig.zls.setup({
                 capabilities = capabilities,
-                cmd = { "/usr/local/bin/zls" },
+                cmd = { "zls" },
             })
             lspconfig.gopls.setup({
                 capabilities = capabilities,
