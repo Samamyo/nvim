@@ -1,7 +1,7 @@
 return {
     {
         "williamboman/mason.nvim",
-        -- dependencies = { "williamboman/mason-lspconfig.nvim" },
+        dependencies = { "williamboman/mason-lspconfig.nvim" },
         cmd = { "Mason", "MasonInstall", "MasonInstallAll", "MasonUpdate" },
         config = function()
             require("mason").setup()
@@ -9,7 +9,7 @@ return {
     },
     {
         "williamboman/mason-lspconfig.nvim",
-        lazy = true,
+        -- lazy = true,
         config = function()
             require("mason-lspconfig").setup({
                 ensure_installed = { "lua_ls", "pyright" },
@@ -35,16 +35,9 @@ return {
                 capabilities = capabilities,
                 filetypes = { "python" },
             })
-            lspconfig.clangd.setup({
-                capabilities = capabilities,
-            })
-            lspconfig.jqls.setup({
-                capabilities = capabilities,
-                filetypes = { "json" },
-            })
             lspconfig.zls.setup({
                 capabilities = capabilities,
-                cmd = { "zls" },
+                cmd = { "/usr/local/bin/zls" },
             })
             lspconfig.gopls.setup({
                 capabilities = capabilities,

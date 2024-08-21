@@ -9,5 +9,6 @@ return {
         vim.keymap.set("n", "<leader>ts", function()
             api.toggle()
         end)
+        api.toggle()
     end,
 }

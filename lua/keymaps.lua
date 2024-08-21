@@ -43,7 +43,7 @@ set("n", "E", "$", { desc = "get end of line" })
 -- IDK man
 -- vim.keymap.set("i", "<C-<BS>>", "<C-W>", { noreap = true, silent = true })
 -- vim.keymap.set("n", "<C-BS>", "ciw")
-set("i", "jk", "<ESC>")
+-- set("i", "jk", "<ESC>")
 set("n", "<leader>h", "<cmd>noh<Cr>")
 
 -- a bit of a swapsees
