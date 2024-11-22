@@ -1,4 +1,5 @@
 local opt = vim.opt
+local g = vim.g
 
 --numbers
 opt.relativenumber = true
@@ -33,18 +34,22 @@ opt.clipboard:append("unnamedplus")
 -- vim.opt.hlsearch = false
 
 --other
-opt.scrolloff = 14
+opt.scrolloff = 50
 opt.iskeyword:append("-")
 opt.inccommand = "split"
 opt.smartindent = true
+
 opt.swapfile = false
 opt.undofile = true
 opt.title = true
 
 --leader
-vim.g.mapleader = " "
-vim.g.maplocalleader = ","
-vim.g.netrw_liststyle = 3
+g.mapleader = " "
+g.maplocalleader = ","
+g.netrw_liststyle = 3
+
+-- zig 
+g.zig_fmt_autosave = 0
 
 vim.keymap.set("n", "<Leader><Leader>", function()
     print("Hello World!")

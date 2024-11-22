@@ -30,6 +30,7 @@ return {
         vim.keymap.set("n", "<C-e>", function() harpoon:list():select(3) end)
         vim.keymap.set("n", "<C-r>", function() harpoon:list():select(4) end)
 
+        -- also another way
         for _, idx in ipairs { 1, 2, 3, 4, 5 } do
             vim.keymap.set("n", string.format("<space>%d", idx), function()
                 harpoon:list():select(idx)

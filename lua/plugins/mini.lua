@@ -14,7 +14,7 @@ return {
         config = function()
             require("mini.ai").setup()
             -- require("mini.notify").setup({})
-            require("mini.pairs").setup()
+            -- require("mini.pairs").setup()
             require("mini.splitjoin").setup()
 
             -- - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren

@@ -3,10 +3,9 @@ return {
     {
         "catppuccin/nvim",
         name = "catppuccin",
-        priority = 1000,
         config = function()
             require("catppuccin").setup({
-                transparent_background = true, -- do not set background color
+                -- transparent_background = true, -- do not set background color
             })
             -- vim.cmd.colorscheme("catppuccin")
         end,
@@ -14,9 +13,8 @@ return {
 
     {
         "rebelot/kanagawa.nvim",
-        -- lazy = true,
         name = "kanagawa",
-        -- priority = 1000,
+        priority = 1000,
         config = function()
             require("kanagawa").setup({
                 compile = true,
@@ -26,27 +24,54 @@ return {
         end,
     },
 
-    -- {
-    --     "vague2k/vague.nvim",
-    --     config = function()
-    --         require("vague").setup({
-    --             -- optional configuration here
-    --         })
-    --         -- vim.cmd.colorscheme("vague")
-    --     end,
-    -- },
+    {
+        "fynnfluegge/monet.nvim",
+        name = "monet",
+        config = function()
+            require("monet").setup({
+                -- dark_mode = false,
+            })
+        end,
+    },
 
     {
         "neanias/everforest-nvim",
-        lazy = true,
+        -- lazy = true,
         config = function()
             require("everforest").setup({
-                transparent_background_level = 2,
+                -- transparent_background_level = 2,
                 background = "light",
             })
-            -- In Lua
-            -- vim.o.background = "light"
-            -- require("everforest").load()
+        end,
+    },
+
+    {
+        "AlexvZyl/nordic.nvim",
+        config = function()
+            require("nordic").setup({
+                transparent = {
+                    bg = true,
+                    float = false,
+                },
+            })
+        end,
+    },
+
+    {
+        "ilof2/posterpole.nvim",
+        priority = 1000,
+        config = function()
+            require("posterpole").setup({
+                -- config here
+                transparent = true,
+                colorless_bg = false, -- grayscale or not
+                dim_inactive = false, -- highlight inactive splits
+                brightness = -6, -- negative numbers - darker, positive - lighter
+                selected_tab_highlight = true, --highlight current selected tab
+                fg_saturation = 14, -- font saturation, gray colors become more brighter
+                bg_saturation = 0, -- background saturation
+            })
+            -- vim.cmd("colorscheme posterpole")
         end,
     },
 }
